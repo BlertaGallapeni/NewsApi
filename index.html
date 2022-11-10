@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+      rel="stylesheet"
+      href="https://assets.sogody.co.uk/newsapp/style.css"
+      />
+      <link rel="stylesheet" href="style.css" />
+
+      <title>NewsApp</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="inner-header flex">
+                <img
+                class="logo"
+                src="https://cdn-icons-png.flaticon.com/512/56/56992.png"
+                />
+                <h1></h1>
+            </div>
+            <div>
+                <svg
+                class="waves"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shape-rendering="auto"
+                >
+                <defs>
+                    <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                    />
+                </defs>
+                <g class="parallax">
+                    <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="0"
+                    fill="rgba(255,255,255,0.7"
+                    />
+                    <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="3"
+                    fill="rgba(255,255,255,0.5)"
+                    />
+                    <use
+                    xlink:href="#gentle-wave"
+                    x="48"
+                    y="5"
+                    fill="rgba(255,255,255,0.3)"
+                    />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </header>
+    
+    <main>
+        <div class="news-title" id="news-title">
+            <h1>Latest News</h1>
+        </div>
+        
+        <div class="searchNews">
+            <form id="form" name="formId">
+                <span
+                ><input type="text" id="searchquery" placeholder="Search news..." />
+                <button type="submit" id="searchbtn" value="search">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+            <spagitn>
+                <label for="lang" class="lbl">Choose a language:</label>
+                <select id="lang" name="language">
+                    <option disabled>Language:</option>
+                    <option value="af">Afrikaans</option>
+                    <option value="sq">Albanian</option>
+                    <option value="ar">Arabic</option>
+                    <option value="eu">Basque</option>
+                    <option value="bn">Bengali</option>
+                    <option value="bg">Bulgarian</option>
+                    <option value="ca">Catalan</option>
+                    <option value="zh">Chinese (Mandarin)</option>
+                    <option value="hr">Croatian</option>
+                    <option value="cs">Czech</option>
+                    <option value="da">Danish</option>
+                    <option value="nl">Dutch</option>
+                    <option value="en" selected>English</option>
+                    <option value="et">Estonian</option>
+                    <option value="fj">Fiji</option>
+                    <option value="fi">Finnish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="el">Greek</option>
+                    <option value="gu">Gujarati</option>
+                    <option value="he">Hebrew</option>
+                    <option value="hi">Hindi</option>
+                    <option value="hu">Hungarian</option>
+                    <option value="id">Indonesian</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="lv">Latvian</option>
+                    <option value="lt">Lithuanian</option>
+                    <option value="mk">Macedonian</option>
+                    <option value="ms">Malay</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="mt">Maltese</option>
+                    <option value="mr">Marathi</option>
+                    <option value="ne">Nepali</option>
+                    <option value="no">Norwegian</option>
+                    <option value="fa">Persian</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="ro">Romanian</option>
+                    <option value="ru">Russian</option>
+                    <option value="sk">Slovak</option>
+              <option value="sl">Slovenian</option>
+              <option value="es">Spanish</option>
+              <option value="sw">Swahili</option>
+              <option value="sv">Swedish</option>
+              <option value="ta">Tamil</option>
+              <option value="te">Telugu</option>
+              <option value="th">Thai</option>
+              <option value="tr">Turkish</option>
+              <option value="uk">Ukrainian</option>
+              <option value="ur">Urdu</option>
+              <option value="vi">Vietnamese</option>
+              <option value="cy">Welsh</option>
+            </select></span
+            >
+        </form>
+    </div>
+    
+    <div class="newsContainer" id="newsContainer"></div>
+    
+    <div class="pagination"></div>
+</main>
+
+<footer>
+    <p class="text-center">
+        Copyright &copy; <a href="https://sogody.com">sogody.com</a>
+    </p>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://assets.sogody.co.uk/newsapp/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

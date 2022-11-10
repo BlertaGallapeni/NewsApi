@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300:400");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.news-title {
+  margin-bottom: 2%;
+}
+
+#searchquery {
+  border: none;
+  border-bottom: 3px solid #6fc27c;
+  padding: 6px;
+  border-bottom-left-radius: 10px;
+  width: 300px;
+  background: transparent;
+}
+#searchbtn {
+  border: 2px solid #6fc27c;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #6fc27c;
+  color: #fff;
+}
+
+#lang {
+  border: 2px solid #6fc27c;
+  padding: 6px;
+  width: 85px;
+  border-radius: 10px;
+  background-color: #6fc27c;
+  color: #fff;
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsContainer {
+  position: relative;
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.newsContainer .card {
+  width: 240px;
+  position: relative;
+  height: 290px;
+  background: rgb(236, 253, 174);
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5%;
+  border-radius: 2%;
+  overflow: hidden;
+}
+.newsContainer .card .imgBx img {
+  width: 100%;
+  overflow: hidden;
+  height: 140px;
+}
+.newsContainer .card .content-box {
+  padding: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+}
+
+.newsContainer .card .content-box h2 {
+  width: 90%;
+  margin-bottom: 5%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+
+.newsContainer .card .content-box p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.newsContainer .card .content-box .date {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.pagination {
+  text-align: center;
+  margin: 30px 30px 60px;
+  user-select: none;
+}
+.pagination li {
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 0 5px 25px rgb(1, 1, 1 / 10%);
+}
+.pagination li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+.current-page,
+.dots {
+  background: #ccc;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.previous-page,
+.next-page {
+  background-color: #6fc27c;
+  width: 80px;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.previous-page:hover {
+  transform: translateX(-5px);
+}
+.next-page:hover {
+  transform: translateX(5px);
+}
+
+.active {
+  background: #6fc27c;
+}
+.disable {
+  background: #ccc;
+}
+
+@media (max-width: 900px) {
+  #searchquery {
+    width: 250px;
+  }
+}
+@media (max-width: 440px) {
+  .news-title {
+    margin-top: 5%;
+  }
+  #searchquery {
+    width: 140px;
+  }
+  #lang {
+    width: 60px;
+  }
+  .lbl {
+    display: none;
+  }
+  .newsContainer .card {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .newsContainer .card .content-box {
+    padding-top: 2%;
+  }
+  .newsContainer .card .content-box h2 {
+    margin-bottom: 3%;
+  }
+}
+/* CSS here */
